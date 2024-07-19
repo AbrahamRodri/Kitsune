@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title %} About {% endblock %} {% block content %} {% load static %}
+<div
+  id="hero"
+  class="relative text-center p-16 h-screen flex items-center bg-cover bg-center"
+  style="background-image: url('{% static 'images/section1.jpg' %}'); background-position: center center">
+  <div class="relative z-10 p-10 rounded-lg w-2/3">
+    <h1 class="text-lg text-white tracking-wide">Welcome to</h1>
+    <h2 class="text-6xl text-white mt-2 tracking-widest">KITSUNE PHOTOGRAPHY</h2>
+    <p class="mt-4 text-white text-lg tracking-wide">
+      I'm a Fresno car photographer, also specializing in landscapes, travel, and portraits.
+    </p>
+  </div>
+</div>
+{% endblock %}
