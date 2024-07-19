@@ -1,0 +1,9 @@
+.bg-transparent {
+  background-color: transparent;
+  color: white;
+}
+
+.bg-solid {
+  background-color: white;
+  color: black;
+}
