@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block title %} About {% endblock %} {% block content %} {% load static %}
+<div
+  id="hero"
+  class="relative text-center py-20 h-screen flex items-center bg-cover bg-center"
+  style="background-image: url('{% static 'images/about1.webp' %}'); background-position: center center">
+  <div class="relative z-10 pt-[20vh] px-[35px] rounded-lg w-full text-left">
+    <h1 class="text-[16px] text-white tracking-[.15rem] mb-[24px] relative inline-flex items-center">
+      ABOUT ME
+      <span class="ml-2 w-16 h-0.5 bg-white"></span>
+    </h1>
+
+    <h2 class="text-[70px] text-white mb-[24px] tracking-widest">ZAD ALLATAR</h2>
+    <p class="mt-4 text-white text-lg tracking-wide text-[16px]">
+      Born and raised in Seattle, Washington to first generation <br />
+      Filipino immigrants, I have a love of cars, pop <br />
+      culture, history, music, and sports.
+    </p>
+  </div>
+</div>
+
+<div id="section2" class="flex flex-wrap bg-gray-100 h-[80vh]">
+  <div class="w-full md:w-1/2">
+    <img src="{% static 'images/about2.webp' %}" alt="Section 2 Image" class="w-full h-full object-cover" />
+  </div>
+  <div class="w-full md:w-1/2 flex items-center justify-center bg-[#333] text-white p-16">
+    <div>
+      <h2 class="text-4xl font-bold">QUICK BIO</h2>
+      <h1 class="text-[16px] text-white tracking-[.15rem] my-[24px] relative inline-flex items-center">
+        Writen by Zad Allatar
+        <span class="ml-2 w-16 h-0.5 bg-white"></span>
+      </h1>
+      <p class="mt-4">
+        Armin is a life-long resident of the Seattle area with over 18 years of photography experience. His clients
+        range from individuals and small businesses to major events and global corporations. The Pacific Northwest
+        provides Armin with the opportunity to photograph a wide range of landscapes – from busy cityscapes to quiet
+        mountain meadows that all take your breath away. His portraits are as diverse as the people that live here. And
+        his automotive photography bleeds speed, invites innovation, and creates conversation. Armin’s photographs tell
+        a story; let him tell yours.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

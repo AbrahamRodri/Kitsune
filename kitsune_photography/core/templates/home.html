@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content %} {% load static %}
+<div
+  id="hero"
+  class="relative text-center py-16 h-screen flex items-center justify-center bg-cover bg-center"
+  style="background-image: url('{% static 'images/section1.jpg' %}'); background-position: center center">
+  <div class="relative z-10 p-10 rounded-lg w-2/3">
+    <h1 class="text-[16px] text-white tracking-[.15rem] mb-[24px] relative inline-flex items-center">
+      <span class="mr-2 w-16 h-0.5 bg-white"></span>
+      WELCOME TO
+      <span class="ml-2 w-16 h-0.5 bg-white"></span>
+    </h1>
+    <h2 class="text-6xl text-white mt-2 tracking-widest">KITSUNE PHOTOGRAPHY</h2>
+    <p class="mt-4 text-white text-lg tracking-wide">
+      I'm a Fresno car photographer, also specializing in landscapes, travel, and portraits.
+    </p>
+  </div>
+</div>
+
+<div id="section2" class="flex flex-wrap bg-gray-100 h-[80vh]">
+  <div class="w-full md:w-1/2">
+    <img src="{% static 'images/section2.webp' %}" alt="Section 2 Image" class="w-full h-full object-cover" />
+  </div>
+  <div class="w-full md:w-1/2 flex items-center justify-center bg-[#333] text-white p-16">
+    <div>
+      <h2 class="text-4xl font-bold">AUTOMOTIVE PHOTOGRAPHER</h2>
+      <p class="mt-4">Available for commercial, editorial, and private work in the Fresno area.</p>
+      <p class="mt-4">Previous clients include Toyota, Lexus, Barrett-Jackson, and more.</p>
+      <a href="#" class="mt-8 inline-block bg-blue-500 text-white px-8 py-4 rounded-full">Reach Out Today</a>
+    </div>
+  </div>
+</div>
+
+<div class="flex flex-wrap bg-[#efefef] h-[80vh]">
+  <div class="w-full md:w-1/2 flex items-center justify-center p-16">
+    <div>
+      <h2 class="text-4xl font-bold text-black">PORTRAITS, LANDSCAPES, ETC</h2>
+      <p class="mt-4 text-black">
+        While automotive photography is my specialty, I enjoy many other styles of photography to suit your needs.
+      </p>
+      <a href="#" class="mt-8 inline-block bg-blue-500 text-white px-8 py-4 rounded-full">View Portfolio</a>
+    </div>
+  </div>
+  <div class="w-full md:w-1/2">
+    <img src="{% static 'images/section3.webp' %}" alt="Section 3 Image" class="w-full h-full object-cover" />
+  </div>
+</div>
+
+<div class="flex flex-wrap bg-[#fff] h-[70vh]">
+  <div class="w-full flex items-center justify-center text-black p-16">
+    <div>
+      <h2 class="text-4xl font-bold">Let's Work Together</h2>
+      <p class="mt-4">I'll help you achieve your photography goals with my expertise and years of experience.</p>
+      <a href="#" class="mt-8 inline-block bg-blue-500 text-white px-8 py-4 rounded-full">Contact Me</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
